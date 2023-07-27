@@ -1,4 +1,6 @@
 # namaste-react 🚀
+
+## Parcel 🔥
 -  dev build
 -  local server
 -  HMR
@@ -8,3 +10,6 @@
 -  minification
 -  bundling
 -  compress
+-  consistent hashing
+-  code splitting
+-  differential bundling
