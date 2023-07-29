@@ -1,27 +1,15 @@
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement(
-    "div",
-    {
-      id: "child",
-      key: "1",
-    },
-    [
-      React.createElement("h1", { key: "1.1" }, "I'm a h1 tag"),
-      React.createElement("h2", { key: "1.2" }, "I'm a h2 tag"),
-    ]
-  ),
-  React.createElement(
-    "div",
-    {
-      id: "child2",
-      key: "2",
-    },
-    [
-      React.createElement("h1", { key: "2.1" }, "I'm a h1 tag"),
-      React.createElement("h2", { key: "2.2" }, "I'm a h2 tag"),
-    ]
-  ),
-]);
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+export default function App() {
+  const title = <h1>Namste React using JSX 🚀</h1>;
+  return (
+    <div>
+      {title}
+      <h1>Namaste React functinal component</h1>
+    </div>
+  );
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+root.render(<App />);
